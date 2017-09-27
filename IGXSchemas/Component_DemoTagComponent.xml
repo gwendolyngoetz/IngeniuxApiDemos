@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns:dt="urn:schemas-microsoft-com:datatypes" name="DemoTagComponent" xmlns="urn:schemas-microsoft-com:xml-data">
+  <AttributeType name="ID" dt:type="id" required="yes" />
+  <AttributeType name="Name" dt:type="string" required="yes" />
+  <AttributeType name="UniqueID" dt:type="int" default="schemas/239" />
+  <AttributeType name="Icon" dt:type="int" default="11" />
+  <AttributeType name="FriendlyName" dt:type="string" default="DemoTagComponent" />
+  <AttributeType name="SS" dt:type="boolean" default="false" />
+  <AttributeType name="DSS" dt:type="boolean" default="false" />
+  <AttributeType name="DefaultCategorization" dt:type="string" default="" />
+  <AttributeType name="Version" dt:type="int" default="2" />
+  <AttributeType name="LastModifiedUser" dt:type="string" default="User/DemoUser" />
+  <ElementType name="Exports" content="textOnly" />
+  <ElementType name="Name" dt:type="string" content="textOnly" />
+  <ElementType name="DemoTagComponent" content="eltOnly" order="seq">
+    <attribute type="ID" />
+    <attribute type="Name" />
+    <element type="Name" UID="a1d7e053c91c4340ae1587b3b52cf644" label="Name" readonly="false" hidden="false" required="true" />
+  </ElementType>
+</Schema>

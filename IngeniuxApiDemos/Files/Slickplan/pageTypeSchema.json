@@ -1,0 +1,66 @@
+﻿[
+  {
+    "id": "_form",
+    "name": "Form"
+  },
+  {
+    "id": "_listing",
+    "name": "Listing"
+  },
+  {
+    "id": "_portal",
+    "name": "Portal"
+  },
+  {
+    "id": "_consumption",
+    "name": "Consumption"
+  },
+  {
+    "id": "_consumptionstack",
+    "name": "Consumption Stack"
+  },
+  {
+    "id": "_gallery",
+    "name": "Gallery"
+  },
+  {
+    "id": "_dialog",
+    "name": "Dialog"
+  },
+  {
+    "id": "_process",
+    "name": "Process"
+  },
+  {
+    "id": "_interactive",
+    "name": "Interactive"
+  },
+  {
+    "id": "_file",
+    "name": "File"
+  },
+  {
+    "id": "_fragment",
+    "name": "Fragment"
+  },
+  {
+    "id": "_external",
+    "name": "External"
+  },
+  {
+    "id": "bv0jhusgtor",
+    "name": "Department Detail"
+  },
+  {
+    "id": "lcvxegamvob6pl",
+    "name": "Department Home"
+  },
+  {
+    "id": "heznyp01vpkbjdg",
+    "name": "Department Portal"
+  },
+  {
+    "id": "ufyyekerys",
+    "name": "Do Not Import"
+  }
+]

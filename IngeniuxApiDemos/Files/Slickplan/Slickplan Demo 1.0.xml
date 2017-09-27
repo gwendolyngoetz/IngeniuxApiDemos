@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemap scheme="2.0">
+  <title>Slickplan Demo</title>
+  <version>1.0</version>
+  <link>https://seattle.slickplan.com/7lalmb8hx</link>
+  <pubDate>Wed, 27 Sep 2017 01:02:58 -0400</pubDate>
+  <section id="svgmainsection">
+    <options>
+      <template>horizontal</template>
+      <color_scheme>default</color_scheme>
+      <id>svgmainsection</id>
+      <design>flat</design>
+      <text_shadow>false</text_shadow>
+      <section>svgmainsection</section>
+    </options>
+    <cells>
+      <cell id="svgzjpkda8fpw3un167">
+        <level>home</level>
+        <text>Disney Parks</text>
+        <order>1000</order>
+      </cell>
+      <cell id="svgojbmszznexxy65qe">
+        <level>1</level>
+        <text>Disneyland</text>
+        <order>1000</order>
+      </cell>
+      <cell id="svgkbbqfgfuktberkn6">
+        <level>1</level>
+        <text>California Adventures</text>
+        <order>2000</order>
+      </cell>
+      <cell id="svgblsp0ismte80iboj">
+        <level>1</level>
+        <text>Walt Disney World</text>
+        <order>3000</order>
+      </cell>
+      <cell id="svgbjplhfau9z0hk70w">
+        <parent>svgblsp0ismte80iboj</parent>
+        <level>2</level>
+        <text>Magic Kingdom</text>
+        <order>1000</order>
+      </cell>
+      <cell id="svgoay8f13hzn8xewr3">
+        <parent>svgojbmszznexxy65qe</parent>
+        <level>2</level>
+        <text>Adventureland</text>
+        <order>1000</order>
+      </cell>
+      <cell id="svgsm6oluga2mcxr8yv">
+        <parent>svgkbbqfgfuktberkn6</parent>
+        <level>2</level>
+        <text>Paradise Pier</text>
+        <order>1000</order>
+      </cell>
+      <cell id="svghk46g7iqr3du8e70">
+        <parent>svgojbmszznexxy65qe</parent>
+        <level>2</level>
+        <text>Tomorrowland</text>
+        <order>2000</order>
+      </cell>
+      <cell id="svgd3faee51yko8bebl">
+        <parent>svgblsp0ismte80iboj</parent>
+        <level>2</level>
+        <text>Hollywood Studios</text>
+        <order>2000</order>
+      </cell>
+      <cell id="svgljv7fkdhhjpjog2y">
+        <parent>svgkbbqfgfuktberkn6</parent>
+        <level>2</level>
+        <text>Grizzly Peak</text>
+        <order>2000</order>
+      </cell>
+      <cell id="svgyjvme8fsge0j4bvc">
+        <parent>svgblsp0ismte80iboj</parent>
+        <level>2</level>
+        <text>Animal Kingdom</text>
+        <order>3000</order>
+      </cell>
+      <cell id="svgwh1ptkhzgr2dgxuc">
+        <parent>svgojbmszznexxy65qe</parent>
+        <level>2</level>
+        <text>Frontierland</text>
+        <order>3000</order>
+      </cell>
+      <cell id="svgb09oidzame4cskiv">
+        <parent>svgblsp0ismte80iboj</parent>
+        <level>2</level>
+        <text>Epcot</text>
+        <order>4000</order>
+      </cell>
+      <cell id="svgo5thcaz7q7mhopv6">
+        <parent>svgb09oidzame4cskiv</parent>
+        <level>3</level>
+        <text>Spaceship Earth</text>
+        <order>1000</order>
+      </cell>
+      <cell id="svgp2mcep0dhsu2mp50">
+        <parent>svgb09oidzame4cskiv</parent>
+        <level>3</level>
+        <text>Imagination!</text>
+        <order>2000</order>
+      </cell>
+    </cells>
+  </section>
+</sitemap>

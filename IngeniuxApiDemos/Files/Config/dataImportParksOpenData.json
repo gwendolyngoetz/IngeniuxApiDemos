@@ -1,0 +1,16 @@
+﻿{
+  "processorType": "ParksOpenData",
+  "target": {
+    "ingeniux": {
+      "userId": "DemoUser",
+      "contentStoreUri": "http://dev.seattle.local/ContentStore",
+      "contentStoreXmlPath": "C:\\igxsites\\cms90\\dev seattle local\\site\\App_Data\\xml",
+      "rootPageFolderId": "x75122"
+    }
+  },
+  "source": {
+    "parksOpenData": {
+      "endpoint": "https://data.seattle.gov/resource/p262-qazs.json"
+    }
+  }
+}

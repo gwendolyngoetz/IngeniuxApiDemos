@@ -1,0 +1,23 @@
+﻿{
+  "processorType":  "Slickplan", 
+  "target": {
+    "ingeniux": {
+      "userId": "[YourCmsUserId]",
+      "contentStoreUri": "http://[YourCmsEndpoint]/ContentStore",
+      "contentStoreXmlPath": "[PathToYourCmsInstallationOnFileSystem]\\site\\App_Data\\xml",
+      "rootPageFolderId": "x12345"
+    }
+  },
+  "source": {
+    "slickplan": {
+      "importFileName": "importFile.xml",
+      "pageTypeSchemaFileName": "pageTypeSchema.json"
+    },
+    "parksOpenData": {
+      "endpoint": "https://data.seattle.gov/resource/p262-qazs.json"
+    },
+    "database": {
+      "connectionString": "data source=localhost; initial catalog=ThemeParks; integrated security=sspi"
+    }
+  }
+}

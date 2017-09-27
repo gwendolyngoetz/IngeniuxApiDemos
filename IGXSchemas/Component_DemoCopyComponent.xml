@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns:dt="urn:schemas-microsoft-com:datatypes" name="DemoCopyComponent" xmlns="urn:schemas-microsoft-com:xml-data">
+  <AttributeType name="ID" dt:type="id" required="yes" />
+  <AttributeType name="Name" dt:type="string" required="yes" />
+  <AttributeType name="UniqueID" dt:type="int" default="schemas/237" />
+  <AttributeType name="Icon" dt:type="int" default="11" />
+  <AttributeType name="FriendlyName" dt:type="string" default="DemoCopyComponent" />
+  <AttributeType name="SS" dt:type="boolean" default="false" />
+  <AttributeType name="DSS" dt:type="boolean" default="false" />
+  <AttributeType name="DefaultCategorization" dt:type="string" default="" />
+  <AttributeType name="Version" dt:type="int" default="3" />
+  <AttributeType name="LastModifiedUser" dt:type="string" default="User/DemoUser" />
+  <ElementType name="Exports" content="textOnly" />
+  <ElementType name="xhtml_Copy" content="textOnly" />
+  <ElementType name="DemoCopyComponent" content="eltOnly" order="seq">
+    <attribute type="ID" />
+    <attribute type="Name" />
+    <element type="xhtml_Copy" UID="9d4a36cf68a149bda4dbb0ee22140f8e" label="Copy" readonly="false" hidden="false" required="true" Height="" />
+  </ElementType>
+</Schema>

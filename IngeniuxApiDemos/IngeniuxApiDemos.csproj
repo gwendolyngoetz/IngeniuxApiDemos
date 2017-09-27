@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{55F6DCB1-8C8D-4D59-8937-61C7BD3CC672}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IngeniuxApiDemos</RootNamespace>
+    <AssemblyName>IngeniuxApiDemos</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>IngeniuxApiDemos.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper, Version=1.50.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.1.50.2\lib\net451\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Ingeniux.CMS.Common">
+      <HintPath>..\lib\Ingeniux.CMS.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Ingeniux.CMS.CSAPI">
+      <HintPath>..\lib\Ingeniux.CMS.CSAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.4.3\lib\net45\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\SharedAssemblyInfo.cs">
+      <Link>Properties\SharedAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Common\ArgumentParser.cs" />
+    <Compile Include="Common\Configuration\Configuration.cs" />
+    <Compile Include="Common\Exceptions\DataImportException.cs" />
+    <Compile Include="Common\Extensions\EnumerableExtensions`.cs" />
+    <Compile Include="Common\Extensions\StringExtensions.cs" />
+    <Compile Include="Mapping\Mapper.cs" />
+    <Compile Include="Mapping\DatabaseToIngeniuxCmsMapper.cs" />
+    <Compile Include="Mapping\ParksOpenDataToIngeniuxCmsMapper.cs" />
+    <Compile Include="Mapping\SlickplanToIngeniuxCmsMapper.cs" />
+    <Compile Include="Processors\DatabaseProcessor.cs" />
+    <Compile Include="Processors\ParksOpenDataProcessor.cs" />
+    <Compile Include="Processors\ProcessorRunner.cs" />
+    <Compile Include="Processors\ProcessorType.cs" />
+    <Compile Include="Processors\Processor.cs" />
+    <Compile Include="Processors\SlickplanProcessor.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Source\Database\DatabaseSourceEndpoint.cs" />
+    <Compile Include="Source\Database\Model\Park.cs" />
+    <Compile Include="Source\ParksOpenData\Model\Park.cs" />
+    <Compile Include="Source\ParksOpenData\ParksOpenDataSourceEndpoint.cs" />
+    <Compile Include="Source\SourceEndpoint.cs" />
+    <Compile Include="Source\Slickplan\Model\PageType.cs" />
+    <Compile Include="Source\Slickplan\Model\SlickplanElement.cs" />
+    <Compile Include="Source\Slickplan\Model\SlickplanItem.cs" />
+    <Compile Include="Source\Slickplan\Model\SlickplanSection.cs" />
+    <Compile Include="Source\Slickplan\SlickplanSourceEndpoint.cs" />
+    <Compile Include="Source\Slickplan\XmlDeserialization\SlickplanXmlDeserializer.cs" />
+    <Compile Include="StringExtensions.cs" />
+    <Compile Include="Target\IngeniuxCms\Extensions\PageExtensions.cs" />
+    <Compile Include="Target\IngeniuxCms\IngeniuxTargetEndpoint.cs" />
+    <Compile Include="Target\IngeniuxCms\Model\Attributes\AllowedComponentsAttribute.cs" />
+    <Compile Include="Target\IngeniuxCms\Model\Attributes\IgnoreAttribute.cs" />
+    <Compile Include="Target\IngeniuxCms\Model\BaseIngeniuxModel.cs" />
+    <Compile Include="Target\IngeniuxCms\Model\Components\Component.cs" />
+    <Compile Include="Target\IngeniuxCms\Model\Components\DemoCopyComponent.cs" />
+    <Compile Include="Target\IngeniuxCms\Model\Components\DemoTagComponent.cs" />
+    <Compile Include="Target\IngeniuxCms\Model\ComponentType.cs" />
+    <Compile Include="Target\IngeniuxCms\Model\NullPage.cs" />
+    <Compile Include="Target\IngeniuxCms\Model\PageContainer.cs" />
+    <Compile Include="Target\IngeniuxCms\Model\Pages\DemoPage.cs" />
+    <Compile Include="Target\IngeniuxCms\Model\Pages\Page.cs" />
+    <Compile Include="Target\IngeniuxCms\Model\Validation\BaseObjectValidator.cs" />
+    <Compile Include="Target\IngeniuxCms\Model\Validation\ValidationException.cs" />
+    <Compile Include="Target\IngeniuxCms\Model\Validation\ValidationResult.cs" />
+    <Compile Include="Target\IngeniuxCms\Model\Validation\ValidationResults.cs" />
+    <Compile Include="Target\IngeniuxCms\PageContainerBuilder.cs" />
+    <Compile Include="Target\IngeniuxCms\PageGenerator.cs" />
+    <Compile Include="Target\IngeniuxCms\Repository\ContentStoreRepository.cs" />
+    <Compile Include="Target\IngeniuxCms\Repository\IngeniuxRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Files\Config\dataImportParksOpenData.json">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Files\Config\dataImportFromDatabase.json">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Files\Config\dataImportSlickplan.json">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Files\Config\dataImport.json">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Files\Config\dataImportConfigurationSample.json">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Content Include="Files\Slickplan\Slickplan Demo 1.0.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="NLog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="NLog.Release.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>NLog.config</DependentUpon>
+    </Content>
+    <None Include="NLog.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <Content Include="Files\Slickplan\pageTypeSchema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

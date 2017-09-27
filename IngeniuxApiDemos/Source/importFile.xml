@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<sitemap scheme="2.0">
+    <title>Gwen's Sample Map</title>
+    <version>1.4</version>
+    <link></link>
+    <pubDate>Mon, 17 Jul 2017 18:06:56 -0400</pubDate>
+    <section id="svgmainsection">
+        <options>
+            <template>horizontal</template>
+            <color_scheme>default</color_scheme>
+            <id>svgmainsection</id>
+            <design>flat</design>
+            <text_shadow>false</text_shadow>
+            <section>svgmainsection</section>
+        </options>
+        <cells>
+            <cell id="svgotrvqkzqsb0vp36u">
+                <level>home</level>
+                <text>General Tree</text>
+                <order>1000</order>
+            </cell>
+            <cell id="svge5mfgzpcba4slw62">
+                <level>1</level>
+                <text>Heroes</text>
+                <order>1000</order>
+                <contents>
+                    <body>
+                        <text>
+                            <id>vckxwgz7bidi38ls</id>
+                            <content>Page Header Name Here</content>
+                            <options>
+                                <tag>h1</tag>
+                                <tag_class>page-header</tag_class>
+                                <tag_id>pageHeader</tag_id>
+                            </options>
+                        </text>
+                        <text>
+                            <id>pg6tc3nqpd2laumh</id>
+                            <content>Some kind of plain text box</content>
+                            <options>
+                                <tag>div</tag>
+                                <tag_class>PlainText1</tag_class>
+                                <tag_id>PlainTextId1</tag_id>
+                            </options>
+                        </text>
+                        <text>
+                            <id>zkpny3btbfeod612</id>
+                            <content>Another box of plain text</content>
+                        </text>
+                    </body>
+                    <meta_focus_keyword>MetaData Focus Keyword</meta_focus_keyword>
+                    <meta_title>MetaData Seo Title</meta_title>
+                    <meta_description>MetaData Description</meta_description>
+                </contents>
+            </cell>
+            <cell id="svgv4optsdgf0wujdyh" collapsed="1">
+                <archetype>ufyyekerys</archetype>
+                <section>svgm73ficl72l2n3562</section>
+                <level>1</level>
+                <text>Family Tree</text>
+                <order>2000</order>
+            </cell>
+            <cell id="svgdz6okogls9w3pma2">
+                <section>svgav41v7l8esedtptt</section>
+                <level>1</level>
+                <text>Page with Tab</text>
+                <order>3000</order>
+            </cell>
+            <cell id="svgz19qx88t1wsfirxs">
+                <section>svgow6soyzyuzcltvog</section>
+                <level>1</level>
+                <text>Page with Accordion</text>
+                <order>4000</order>
+                <archetype>ufyyekerys</archetype>
+            </cell>
+            <cell id="svgb0fl6bdty5m2h5xp" collapsed="1">
+                <archetype>ufyyekerys</archetype>
+                <level>1</level>
+                <text>Exclude this item</text>
+                <order>5000</order>
+            </cell>
+            <cell id="svgx3460gr59q0zitz5">
+                <parent>svgb0fl6bdty5m2h5xp</parent>
+                <level>2</level>
+                <text>item 1</text>
+                <order>1000</order>
+            </cell>
+            <cell id="svgkkx2lhw1cyl07ou6">
+                <parent>svgdz6okogls9w3pma2</parent>
+                <level>2</level>
+                <text>Mad with Power</text>
+                <order>1000</order>
+            </cell>
+            <cell id="svgpnsmg9nbj1lw6mqg">
+                <parent>svgv4optsdgf0wujdyh</parent>
+                <level>2</level>
+                <text>SubPage1</text>
+                <order>1000</order>
+                <contents>
+                    <body>
+                        <wysiwyg>
+                            <id>itzy1qandjyar01u</id>
+                        </wysiwyg>
+                        <text>
+                            <id>g1aaayo32nx4w0rc</id>
+                        </text>
+                        <image>
+                            <id>v8x260gopgpwxzwq</id>
+                        </image>
+                    </body>
+                </contents>
+            </cell>
+            <cell id="svgt2kp7e44dffeoz5v">
+                <parent>svge5mfgzpcba4slw62</parent>
+                <color>#205bf6</color>
+                <textcolor>#ffffff</textcolor>
+                <desc>Tony Stark is Iron Man</desc>
+                <archetype>lcvxegamvob6pl</archetype>
+                <level>2</level>
+                <text>Iron Man</text>
+                <order>1000</order>
+            </cell>
+            <cell id="svgafvfrftd8wyas4mm">
+                <parent>svgb0fl6bdty5m2h5xp</parent>
+                <level>2</level>
+                <text>item 2</text>
+                <order>2000</order>
+            </cell>
+            <cell id="svgujkwksursta5f7yz">
+                <parent>svge5mfgzpcba4slw62</parent>
+                <urls>
+                    <url type="external" label="Google">http://google.com</url>
+                    <url type="external" label="Bing">http://bing.com</url>
+                </urls>
+                <archetype>_file</archetype>
+                <level>2</level>
+                <text>Captain America</text>
+                <order>2000</order>
+            </cell>
+            <cell id="svgg6th6pxw4ay89exs">
+                <parent>svgt2kp7e44dffeoz5v</parent>
+                <archetype>bv0jhusgtor</archetype>
+                <level>3</level>
+                <text>Jarvis</text>
+                <order>1000</order>
+                <contents>
+                    <body>
+                        <text>
+                            <id>ozmsyrnx98tpk21w</id>
+                            <content>Plain Text 1</content>
+                        </text>
+                        <wysiwyg>
+                            <id>fy3izi57a6aeayas</id>
+                            <content>&lt;p&gt;Rich Text 1&lt;/p&gt;</content>
+                        </wysiwyg>
+                    </body>
+                </contents>
+            </cell>
+        </cells>
+    </section>
+    <section id="svgm73ficl72l2n3562">
+        <options>
+            <template>horizontal</template>
+            <design>flat</design>
+            <color_scheme>default</color_scheme>
+            <text_shadow>false</text_shadow>
+            <parent>svgv4optsdgf0wujdyh</parent>
+            <name>Maternal</name>
+            <id>svgm73ficl72l2n3562</id>
+            <section>svgm73ficl72l2n3562</section>
+        </options>
+        <cells>
+            <cell id="svgd6hs6suu9m2zt6od">
+                <level>home</level>
+                <text>Family Tree</text>
+                <order>1000</order>
+            </cell>
+            <cell id="svgqnarurimtamq1e31">
+                <level>1</level>
+                <text>Grandmother</text>
+                <order>1000</order>
+            </cell>
+            <cell id="svguq4scwq7elar4r5n" collapsed="1">
+                <parent>svgqnarurimtamq1e31</parent>
+                <level>2</level>
+                <text>Aunt 1</text>
+                <order>1000</order>
+            </cell>
+            <cell id="svgx922h7qijz4xgpp3" collapsed="1">
+                <parent>svgqnarurimtamq1e31</parent>
+                <level>2</level>
+                <text>Mom</text>
+                <order>2000</order>
+            </cell>
+            <cell id="svgl8ye1qj2mvh29kto" collapsed="1">
+                <parent>svgqnarurimtamq1e31</parent>
+                <level>2</level>
+                <text>Uncle 2</text>
+                <order>3000</order>
+            </cell>
+            <cell id="svgnq2cho9ijo67srwh" collapsed="1">
+                <parent>svgqnarurimtamq1e31</parent>
+                <level>2</level>
+                <text>Uncle 3</text>
+                <order>4000</order>
+            </cell>
+            <cell id="svgq8w6q8f5ltx99zxs">
+                <parent>svgx922h7qijz4xgpp3</parent>
+                <level>3</level>
+                <text>Me</text>
+                <order>1000</order>
+            </cell>
+            <cell id="svgrfwqool8m9rcc4af">
+                <parent>svguq4scwq7elar4r5n</parent>
+                <level>3</level>
+                <text>Cousin 1a</text>
+                <order>1000</order>
+            </cell>
+            <cell id="svgpgfsl2dcfj4p215b">
+                <parent>svgl8ye1qj2mvh29kto</parent>
+                <level>3</level>
+                <text>Cousin 2a</text>
+                <order>1000</order>
+            </cell>
+            <cell id="svgjtakbt2xth8m2ysa">
+                <parent>svgnq2cho9ijo67srwh</parent>
+                <level>3</level>
+                <text>Cousin 3a</text>
+                <order>1000</order>
+            </cell>
+            <cell id="svgpu5wdaelew9abgns">
+                <parent>svguq4scwq7elar4r5n</parent>
+                <level>3</level>
+                <text>Cousin 1b</text>
+                <order>2000</order>
+            </cell>
+            <cell id="svgn4a94rmphivknt31">
+                <parent>svgnq2cho9ijo67srwh</parent>
+                <level>3</level>
+                <text>Cousin 3b</text>
+                <order>2000</order>
+            </cell>
+            <cell id="svgzz98cybu46xk46yt">
+                <parent>svgl8ye1qj2mvh29kto</parent>
+                <level>3</level>
+                <text>Cousin 2b</text>
+                <order>2000</order>
+            </cell>
+            <cell id="svgn460rnrmfka5miro" collapsed="1">
+                <parent>svgx922h7qijz4xgpp3</parent>
+                <level>3</level>
+                <text>Brother 1</text>
+                <order>2000</order>
+            </cell>
+            <cell id="svgneefc28dgx3iw91h" collapsed="1">
+                <parent>svgx922h7qijz4xgpp3</parent>
+                <level>3</level>
+                <text>Sister 2</text>
+                <order>3000</order>
+            </cell>
+            <cell id="svgtgwgvdjvkka6opix">
+                <parent>svgneefc28dgx3iw91h</parent>
+                <level>4</level>
+                <text>Nephew 2a</text>
+                <order>1000</order>
+            </cell>
+            <cell id="svgwxdidcsulp0q1ysv">
+                <parent>svgn460rnrmfka5miro</parent>
+                <level>4</level>
+                <text>Nephew 1a</text>
+                <order>1000</order>
+            </cell>
+            <cell id="svgkbbmfct7q2wyogjj">
+                <parent>svgn460rnrmfka5miro</parent>
+                <level>4</level>
+                <text>Niece 1a</text>
+                <order>2000</order>
+            </cell>
+        </cells>
+    </section>
+    <section id="svgav41v7l8esedtptt">
+        <options>
+            <template>horizontal</template>
+            <design>flat</design>
+            <color_scheme>default</color_scheme>
+            <text_shadow>false</text_shadow>
+            <parent>svgdz6okogls9w3pma2</parent>
+            <name>Page with Tab</name>
+            <id>svgav41v7l8esedtptt</id>
+            <section>svgav41v7l8esedtptt</section>
+        </options>
+        <cells>
+            <cell id="svgfv84gvwe4bnp65du">
+                <level>home</level>
+                <text>Page with Tab</text>
+                <order>1000</order>
+            </cell>
+            <cell id="svgdchng4l7p4mfttju">
+                <level>1</level>
+                <text>My favorite colors Tabs</text>
+                <order>1000</order>
+                <contents/>
+            </cell>
+            <cell id="svgp43rnzd85gduarww">
+                <parent>svgdchng4l7p4mfttju</parent>
+                <level>2</level>
+                <text>Tab 1</text>
+                <order>1000</order>
+            </cell>
+            <cell id="svgdv1xdnoteh8iflsg">
+                <parent>svgdchng4l7p4mfttju</parent>
+                <level>2</level>
+                <text>Tab 2</text>
+                <order>2000</order>
+            </cell>
+            <cell id="svgbpdbq1ng9hxbgjhl">
+                <parent>svgdchng4l7p4mfttju</parent>
+                <level>2</level>
+                <text>Tab 3</text>
+                <order>3000</order>
+            </cell>
+        </cells>
+    </section>
+    <section id="svgow6soyzyuzcltvog">
+        <options>
+            <template>horizontal</template>
+            <design>flat</design>
+            <color_scheme>default</color_scheme>
+            <text_shadow>false</text_shadow>
+            <parent>svgz19qx88t1wsfirxs</parent>
+            <name>Page with Accordion</name>
+            <id>svgow6soyzyuzcltvog</id>
+            <section>svgow6soyzyuzcltvog</section>
+        </options>
+        <cells>
+            <cell id="svgn3mlag15l0nd7mm7">
+                <level>home</level>
+                <text>Page with Accordion</text>
+                <order>1000</order>
+            </cell>
+            <cell id="svgiw2ksc3w2c4ozjlz">
+                <level>1</level>
+                <text>Fight Club FAQ Accordion</text>
+                <order>1000</order>
+            </cell>
+            <cell id="svgmqrotzj276ynlr6v">
+                <parent>svgiw2ksc3w2c4ozjlz</parent>
+                <level>2</level>
+                <text>Accordion Item 1</text>
+                <order>1000</order>
+            </cell>
+            <cell id="svgfajmp2sv6j8wja0m">
+                <parent>svgiw2ksc3w2c4ozjlz</parent>
+                <level>2</level>
+                <text>Accordion Item 2</text>
+                <order>2000</order>
+            </cell>
+            <cell id="svgav9k9cji1kmojs6k">
+                <parent>svgiw2ksc3w2c4ozjlz</parent>
+                <level>2</level>
+                <text>Accordion Item 3</text>
+                <order>3000</order>
+            </cell>
+            <cell id="svgj6aaukyoq8ho2qut">
+                <parent>svgiw2ksc3w2c4ozjlz</parent>
+                <level>2</level>
+                <text>Accordion Item 4</text>
+                <order>4000</order>
+            </cell>
+        </cells>
+    </section>
+</sitemap>

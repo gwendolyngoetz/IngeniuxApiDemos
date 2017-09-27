@@ -1,0 +1,35 @@
+<Schema xmlns:dt="urn:schemas-microsoft-com:datatypes" name="DemoPage" xmlns="urn:schemas-microsoft-com:xml-data">
+  <AttributeType name="ID" dt:type="id" required="yes" />
+  <AttributeType name="Name" dt:type="string" required="yes" />
+  <AttributeType name="UniqueID" dt:type="int" default="schemas/238" />
+  <AttributeType name="Icon" dt:type="int" default="2" />
+  <AttributeType name="FriendlyName" dt:type="string" default="DemoPage" />
+  <AttributeType name="SS" dt:type="boolean" default="true" />
+  <AttributeType name="DSS" dt:type="boolean" default="true" />
+  <AttributeType name="ViewName" dt:type="DemoPage" default="DemoPage" />
+  <AttributeType name="DefaultCategorization" dt:type="string" default="" />
+  <AttributeType name="Version" dt:type="int" default="8" />
+  <AttributeType name="LastModifiedUser" dt:type="string" default="User/DemoUser" />
+  <ElementType name="Exports" content="textOnly" />
+  <ElementType name="Heading" dt:type="string" content="textOnly" />
+  <ElementType name="Text" dt:type="string" content="textOnly" />
+  <ElementType name="xpowercomponent_DemoCopyComponent" content="eltOnly" />
+  <ElementType name="xpowerlist_DemoTagComponents" content="eltOnly" />
+  <ElementType name="xpowercomponent_DemoTagComponent" content="eltOnly" />
+  <ElementType name="xpowernavigation_Navigation" content="eltOnly" />
+  <ElementType name="xpowernavigation_Children" content="eltOnly" />
+  <ElementType name="DemoPage" content="eltOnly" order="seq">
+    <attribute type="ID" />
+    <attribute type="Name" />
+    <element type="Heading" UID="8e47da7c8f7e4078b4d91b50c4b5898e" label="Heading" readonly="false" hidden="false" required="true" />
+    <element type="Text" UID="44422d6f5b8c46a58512842ec8da8c08" label="Text" readonly="false" hidden="false" required="false" />
+    <element type="xpowercomponent_DemoCopyComponent" UID="92cd354cc13143449098905dfc105efa" label="DemoCopyComponent" readonly="false" hidden="false" required="false" Component="" CompTypes="DemoCopyComponent" AutoEmbed="false" WrappedUp="false" AllowWrappingChange="false" />
+    <element type="xpowerlist_DemoTagComponents" UID="2d3337164e78496886c2d44bcfc5947a" label="DemoTagComponents" readonly="false" hidden="false" required="false" Enclosed="false" AllowEnclosureChange="false" List="xpowercomponent_DemoTagComponent" Component="" CompTypes="DemoTagComponent" AutoEmbed="false" WrappedUp="false" AllowWrappingChange="false" />
+    <element type="xpowernavigation_Navigation" UID="2ea70ea089f0427e9369d9bf5624c1c0" label="Navigation" readonly="false" hidden="false" required="true" Expanded="false" Navigation="Ancestors" GenerationOrder="" StartPage="" MaxNodes="" MaxDepth="" Query="">
+      <element type="Exports" default="" />
+    </element>
+    <element type="xpowernavigation_Children" UID="42cd1b8675ff460daad598d7ca090729" label="Children" readonly="false" hidden="false" required="true" Expanded="false" Navigation="Children" GenerationOrder="" StartPage="" MaxNodes="" MaxDepth="" Query="">
+      <element type="Exports" default="" />
+    </element>
+  </ElementType>
+</Schema>

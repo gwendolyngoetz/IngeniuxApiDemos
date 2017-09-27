@@ -1,0 +1,17 @@
+﻿{
+  "processorType": "Slickplan",
+  "target": {
+    "ingeniux": {
+      "userId": "DemoUser",
+      "contentStoreUri": "http://dev.seattle.local/ContentStore",
+      "contentStoreXmlPath": "C:\\igxsites\\cms90\\dev seattle local\\site\\App_Data\\xml",
+      "rootPageFolderId": "x74805"
+    }
+  },
+  "source": {
+    "slickplan": {
+      "importFileName": "Files\\Slickplan\\Slickplan Demo 1.0.xml",
+      "pageTypeSchemaFileName": "Files\\Slickplan\\pageTypeSchema.json"
+    }
+  }
+}
